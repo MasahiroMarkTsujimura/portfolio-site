@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+import Navbar from './Nav';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import '../index.css';
 
 const Layout = ({ children }) => {
     return (
         <Fragment>
+            <Navbar />
             <main>{children}</main>
             <Footer>
                 © {new Date().getFullYear()} Masahiro Mark Tsujimura
