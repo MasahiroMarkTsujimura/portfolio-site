@@ -9,9 +9,9 @@ const Layout = ({ children }) => {
         <Fragment>
             <Navbar />
             <main>{children}</main>
-            <Footer>
+            {/* <Footer>
                 © {new Date().getFullYear()} Masahiro Mark Tsujimura
-            </Footer>
+            </Footer> */}
         </Fragment>
     );
 };
@@ -20,13 +20,13 @@ Layout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-const Footer = styled.footer`
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 30px;
-    background-color: #3a435e;
-    color: #FBFBFB;
-`;
+// const Footer = styled.footer`
+//     position: fixed;
+//     bottom: 0;
+//     width: 100%;
+//     padding: 30px;
+//     background-color: #3a435e;
+//     color: #FBFBFB;
+// `;
 
 export default Layout;
