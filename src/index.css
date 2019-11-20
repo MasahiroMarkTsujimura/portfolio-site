@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   font-family: "Cabin", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -10,4 +11,16 @@ body {
   height: 100%;
   margin: 0;
   background-color: #f4f4f8;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
 }

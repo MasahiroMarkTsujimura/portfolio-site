@@ -3,13 +3,14 @@ import styled, { css } from 'styled-components';
 
 const colorThemes = [
     '#FAFAFA',  //white
+    '#E1E1E1',  //gray
     '#050505',  //black
     '#7289df',
     '#3454d1',
     '#223a96',
 ];
 
-const themes = () => {
+const Themes = () => {
     return (
         <ColorContainer>
             {colorThemes.map((color, i) =>
@@ -42,4 +43,4 @@ const Color = styled.div`
     `}
 `;
 
-export default themes;
+export default Themes;
