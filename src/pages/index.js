@@ -9,7 +9,12 @@ const IndexPage = () => (
     <Fragment>
         <SEO title='' />
         <Hero>
-            <h1>Who is this guy?</h1>
+            <h1>Masahiro Mark Tsujimura</h1>
+            <div className='button-container'>
+                <button>Who this?</button>
+                <button>What he do?</button>
+                <button>How to slide in DM?</button>
+            </div>
         </Hero>
     </Fragment>
 );
@@ -19,6 +24,7 @@ const Hero = styled.section`
     height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -26,7 +32,17 @@ const Hero = styled.section`
         color: #050505;
         font-size: 50px;
     }
+
+    .button-container {
+        display: flex;
+        align-items: center;
+
+        button {
+            margin: 0 20px;
+        }
+    }
 `;
+
 
 // const Hero = styled.div`
 //     background-image: url(${heroBackgroundImg});
