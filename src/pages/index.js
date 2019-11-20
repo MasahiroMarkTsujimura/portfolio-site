@@ -7,7 +7,7 @@ const IndexPage = () => (
     <Fragment>
         <SEO title='Home' />
         <Hero>
-            <h1>Hero Section</h1>
+            <h1>Masahiro Mark Tsujimura</h1>
         </Hero>
     </Fragment>
 );
@@ -18,6 +18,14 @@ const Hero = styled.div`
     width: 100vw;
     height: 100vh;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        font-size: 60px;
+        color: white;
+    }
 `;
 
 export default IndexPage;

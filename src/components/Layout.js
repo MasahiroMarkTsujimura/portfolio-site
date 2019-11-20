@@ -7,7 +7,7 @@ import '../index.css';
 const Layout = ({ children }) => {
     return (
         <Fragment>
-            <Navbar />
+            {/* <Navbar /> */}
             <main>{children}</main>
             {/* <Footer>
                 © {new Date().getFullYear()} Masahiro Mark Tsujimura
