@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import SEO from '../components/Seo';
 
 import Hero from '../section/Hero';
-import About from '../section/About';
+// import About from '../section/About';
 // import heroBackgroundImg from '../images/hero-background.png';
 
 //https://dribbble.com/shots/8214828-Real-Advisor-Homepage-Exploration-02
@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Fragment>
         <SEO title='' />
         <Hero />
-        <About />
+        {/* <About /> */}
     </Fragment>
 );
 

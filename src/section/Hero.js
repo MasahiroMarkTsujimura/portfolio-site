@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const Hero = () => {
     return (
         <HeroSection>
             <h1>Masahiro Mark Tsujimura</h1>
+            <h2>Coming soon</h2>
             <div className='button-container'>
+                {/*
                 <a href='#Who'><button>Who this?</button></a>
                 <button>What he do?</button>
                 <button>How to contact?</button>
+                */}
             </div>
         </HeroSection>
     );
@@ -27,6 +29,10 @@ const HeroSection = styled.section`
     
     h1 {
         color: #050505;
+    }
+
+    h2 {
+        color: #030303;
     }
 
     .button-container {
