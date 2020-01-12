@@ -1,17 +1,21 @@
 import React, { Fragment } from 'react';
-import Navbar from './Nav';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import '../index.css';
 
 const Layout = ({ children }) => {
     return (
         <Fragment>
-            {/* <Navbar /> */}
+            <Nav>
+                <Link to='/'><div className='heading__logo'>MT</div></Link>
+                <ul>
+                    <li><Link to='About'>About</Link></li>
+                    <li><Link to='Projects'>Projects</Link></li>
+                    <li><Link to='Contact'>Contacts</Link></li>
+                </ul>
+            </Nav>
             <main>{children}</main>
-            {/* <Footer>
-                © {new Date().getFullYear()} Masahiro Mark Tsujimura
-            </Footer> */}
         </Fragment>
     );
 };
@@ -20,13 +24,41 @@ Layout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 
-// const Footer = styled.footer`
-//     position: fixed;
-//     bottom: 0;
-//     width: 100%;
-//     padding: 30px;
-//     background-color: #3a435e;
-//     color: #FBFBFB;
-// `;
+const Nav = styled.nav`
+    position: fixed;
+    padding-right: 10%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .heading__logo {
+        height: 100%;
+        padding: 15px;
+        font-size: 32px;
+        background-color: #2e4057;
+        color: #f6f6f6;
+
+        :hover {
+            
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            padding: 25px;
+            list-style: none;
+            
+            a {
+                font-size: 18px;
+                color: black;
+            }
+        }
+    }
+`;
 
 export default Layout;
