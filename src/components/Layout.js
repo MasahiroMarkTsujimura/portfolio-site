@@ -9,13 +9,8 @@ const Layout = ({ children }) => {
         <Fragment>
             <Nav>
                 <Link to='/'><div className='heading__logo'>MT</div></Link>
-                <ul>
-                    <li><Link to='About'>About</Link></li>
-                    <li><Link to='Projects'>Projects</Link></li>
-                    <li><Link to='Contact'>Contacts</Link></li>
-                </ul>
             </Nav>
-            <main>{children}</main>
+            {children}
         </Fragment>
     );
 };
@@ -32,16 +27,17 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
 
+    a {
+        color: #050505;
+        text-decoration: none;
+    }
+
     .heading__logo {
         height: 100%;
         padding: 15px;
         font-size: 32px;
         background-color: #2e4057;
         color: #f6f6f6;
-
-        :hover {
-            
-        }
     }
 
     ul {
