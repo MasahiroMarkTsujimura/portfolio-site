@@ -9,11 +9,17 @@ const IndexPage = () => (
         <SEO title='' />
         <Main>
             <h1>Masahiro Mark Tsujimura</h1>
-            <h2>Front-End Web Developer</h2>
+            <h2>Frontend Web Developer</h2>
             <section>
-                <a href='https://www.linkedin.com/in/masahiro-mark-tsujimura-69074183/' target='_blank' rel='noopener noreferrer'><LinkedinSquare size='35' /></a>
-                <a href='https://github.com/MasahiroMarkTsujimura' target='_blank' rel='noopener noreferrer'><Github size='35' /></a>
-                <a href='mailto: masahiromarktsujimura@gmail.com'><Envelope size='35' /></a>
+                <a href='https://www.linkedin.com/in/masahiro-mark-tsujimura-69074183/' target='_blank' rel='noopener noreferrer'>
+                    <LinkedinSquare size='35' className='bounce-animation' />
+                </a>
+                <a href='https://github.com/MasahiroMarkTsujimura' target='_blank' rel='noopener noreferrer'>
+                    <Github size='35' className='bounce-animation' />
+                </a>
+                <a href='mailto: masahiromarktsujimura@gmail.com'>
+                    <Envelope size='35' className='shake-animation' />
+                </a>
             </section>
         </Main>
     </Fragment>
@@ -47,7 +53,7 @@ const Main = styled.main`
             margin: 0 15px;
             color: #050505;
         }
-    }
+    }   
 `;
 
 export default IndexPage;
