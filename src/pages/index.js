@@ -6,7 +6,7 @@ import { LinkedinSquare, Github } from 'styled-icons/boxicons-logos';
 
 const IndexPage = () => (
     <Fragment>
-        <SEO title='' />
+        <SEO title="I'm allergic to avocados" />
         <Main>
             <h1>Masahiro Mark Tsujimura</h1>
             <h2>Frontend Web Developer</h2>
@@ -30,7 +30,7 @@ const Main = styled.main`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 50px;
     margin: 0 5%;
 
