@@ -1,94 +1,94 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 
 * {
-  box-sizing: border-box;
-  font-family: "Cabin", sans-serif;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html,
 body {
-  height: 100%;
-  margin: 0;
-  background-color: #f4f4f8;
+    height: 100%;
+    margin: 0;
+    background-color: #f4f4f8;
 }
 
 h1 {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 h2 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 p {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .bounce-animation:hover {
-  animation: bounce 0.7s;
+    animation: bounce 0.7s;
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(0px);
+    }
 
-  15% {
-    transform: translateY(-3px);
-  }
+    15% {
+        transform: translateY(-3px);
+    }
 
-  30% {
-    transform: translateY(0px);
-  }
+    30% {
+        transform: translateY(0px);
+    }
 
-  45% {
-    transform: translateY(-2px);
-  }
+    45% {
+        transform: translateY(-2px);
+    }
 
-  60% {
-    transform: translateY(0px);
-  }
+    60% {
+        transform: translateY(0px);
+    }
 
-  75% {
-    transform: translateY(-1px);
-  }
+    75% {
+        transform: translateY(-1px);
+    }
 
-  90% {
-    transform: translateY(0px);
-  }
+    90% {
+        transform: translateY(0px);
+    }
 }
 
 .shake-animation:hover {
-  animation: shake 0.7s;
+    animation: shake 0.7s;
 }
 
 @keyframes shake {
-  from {
-    transform: rotate(-15deg);
-  }
+    from {
+        transform: rotate(-15deg);
+    }
 
-  15% {
-    transform: rotate(15deg);
-  }
+    15% {
+        transform: rotate(15deg);
+    }
 
-  30% {
-    transform: rotate(-10deg);
-  }
+    30% {
+        transform: rotate(-10deg);
+    }
 
-  45% {
-    transform: rotate(10deg);
-  }
+    45% {
+        transform: rotate(10deg);
+    }
 
-  60% {
-    transform: rotate(-5deg);
-  }
+    60% {
+        transform: rotate(-5deg);
+    }
 
-  75% {
-    transform: rotate(5deg);
-  }
+    75% {
+        transform: rotate(5deg);
+    }
 
-  90% {
-    transform: rotate(0deg);
-  }
+    90% {
+        transform: rotate(0deg);
+    }
 }
