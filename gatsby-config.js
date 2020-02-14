@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Masahiro Tsujimura Portfolio Site',
+        title: 'Masahiro Tsujimura',
         description: 'Portfolio site of Masahiro Mark Tsujimura.',
         author: 'Masahiro Mark Tsujimura',
     },
