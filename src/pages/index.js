@@ -3,6 +3,7 @@ import SEO from '../components/Seo';
 import styled from 'styled-components';
 import { Envelope } from 'styled-icons/boxicons-regular';
 import { LinkedinSquare, Github } from 'styled-icons/boxicons-logos';
+import Cat from '../components/Cat';
 
 const IndexPage = () => (
     <Fragment>
@@ -21,6 +22,7 @@ const IndexPage = () => (
                     <Envelope size='35' className='shake-animation' />
                 </a>
             </section>
+            <Cat />
         </Main>
     </Fragment>
 );
@@ -31,7 +33,7 @@ const Main = styled.main`
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 50px;
+    padding-top: 75px;
     margin: 0 5%;
 
     h1, h2 {
