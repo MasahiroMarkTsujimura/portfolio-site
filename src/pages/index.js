@@ -22,10 +22,16 @@ const IndexPage = () => (
                     <Envelope size='35' className='shake-animation' />
                 </a>
             </section>
-            <Cat />
+            <Neko />
         </Main>
     </Fragment>
 );
+
+const Neko = styled(Cat)`
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+`;
 
 const Main = styled.main`
     display: flex;
@@ -33,7 +39,7 @@ const Main = styled.main`
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 75px;
+    margin-top: 72px;
     margin: 0 5%;
 
     h1, h2 {
