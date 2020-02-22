@@ -53,6 +53,10 @@ const Main = styled.main`
         text-align: center;
     }
 
+    h1 {
+        margin-top: 0;
+    }
+
     @media (max-width: 767px) {
         h1 {
             font-size:  40px;
@@ -64,6 +68,8 @@ const Main = styled.main`
     }
 
     section  {
+        margin-bottom: 10px;
+
         a {
             margin: 0 15px;
             color: #050505;
