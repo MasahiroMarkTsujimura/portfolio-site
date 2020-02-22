@@ -7,7 +7,7 @@ import Cat from '../components/Cat';
 
 const IndexPage = () => (
     <Fragment>
-        <SEO title="I'm allergic to avocados" />
+        <SEO title="I'm allergic to cats" />
         <GlobalStyle />
         <Main>
             <h1>Masahiro Mark Tsujimura</h1>
