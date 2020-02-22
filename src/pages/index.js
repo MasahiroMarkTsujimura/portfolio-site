@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import SEO from '../components/Seo';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { Envelope } from 'styled-icons/boxicons-regular';
 import { LinkedinSquare, Github } from 'styled-icons/boxicons-logos';
 import Cat from '../components/Cat';
@@ -8,6 +8,7 @@ import Cat from '../components/Cat';
 const IndexPage = () => (
     <Fragment>
         <SEO title="I'm allergic to avocados" />
+        <GlobalStyle />
         <Main>
             <h1>Masahiro Mark Tsujimura</h1>
             <h2>Frontend Web Developer</h2>
@@ -27,10 +28,16 @@ const IndexPage = () => (
     </Fragment>
 );
 
+const GlobalStyle = createGlobalStyle`
+    body {
+        overflow: hidden;
+    }
+`;
+
 const Neko = styled(Cat)`
     position: absolute;
-    bottom: 0;
-    right: 20px;
+    bottom: -40px;
+    right: 3vw;
 `;
 
 const Main = styled.main`
