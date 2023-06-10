@@ -6,7 +6,7 @@
   "author": "Masahiro Mark Tsujimura",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.18.21",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.38",
     "gatsby-plugin-layout": "^1.1.21",
     "gatsby-plugin-manifest": "^2.2.37",
